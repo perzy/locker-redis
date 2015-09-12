@@ -1,0 +1,50 @@
+{
+  "name": "locker-redis",
+  "version": "0.1.0",
+  "description": "simple locker by redis",
+  "keywords":"locker redis",
+  "author": {
+    "name": "Jerry Wu",
+    "email": "perzy_wu@163.com",
+    "url": "https://github.com/perzy"
+  },
+  "contributors": [
+    {
+      "name": "jerrywu",
+      "email": "perzy_wu@163.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/perzy/locker-redis"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "debug":"~2.2.0"
+  },
+  "devDependencies": {
+
+  },
+  "files": [
+    "lib/",
+    "README.md",
+    "LICENSE",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+
+  },
+  "bugs": {
+    "url": "https://github.com/perzy/locker-redis/issues"
+  },
+  "homepage": "https://github.com/perzy/locker-redis",
+  "maintainers": [
+    {
+      "name": "jerrywu",
+      "email": "perzy_wu@163.com"
+    }
+  ]
+}
