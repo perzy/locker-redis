@@ -2,6 +2,7 @@
 
 [![NPM Version][npm-image]][npm-url]
 
+
 ## Installation
 
 ```bash
@@ -43,6 +44,9 @@ Release this redisLocker
 redisLocker.release();
 ```
 
+## Use generator version for koa
+
+[co-redis-locker](https://github.com/perzy/co-redis-locker)
 
 ## License
 
