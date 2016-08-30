@@ -16,22 +16,29 @@ $ npm install ioredis
 ```js
 var RedisLocker = require('locker-redis');
 var LockerTimeoutError = require('locker-redis').LockerTimeoutError;
-var redisLocker = new RedisLocker(lockerName, options);
 ```
 
 ### RedisLocker(name,options)
 
 RedisLocker class
 
+```js
+var lockerName = 'user:100:account';
+var options = {};
+var redisLocker = new RedisLocker(lockerName, options);
+```
+
 ### RedisLocker#acquire(function next(){})
  
 Acquire redisLocker retry some times.If timeout then throw error.
 
 ```js
-redisLocker.acquire(function (err) {
+redisLocker.acquire(function (err, release) {
   if (err) {
     return callback(new Error());
   }
+  
+  // release();  You can call release function here to exec redis locker release.
   callback(null);
 });
 ```
