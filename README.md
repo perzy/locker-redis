@@ -1,7 +1,6 @@
 # locker-redis
 
 [![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
 
 ## Installation
 
@@ -48,3 +47,6 @@ redisLocker.release();
 ## License
 
 [MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/locker-redis.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/locker-redis
